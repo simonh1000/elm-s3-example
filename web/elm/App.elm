@@ -180,15 +180,7 @@ sendSignedData { signingData, nativeFiles } =
             Cmd.none
 
         nf :: _ ->
-            request
-                { method = "POST"
-                , headers = []
-                , url = bucket
-                , body = makeMultiPart signingData nf
-                , expect = expectJson etagDecoder
-                , timeout = Nothing
-                , withCredentials = False
-                }
+            Http.post bucket (makeMultiPart signingData nf) etagDecoder
                 |> Http.send S3Confirmation
 
 
