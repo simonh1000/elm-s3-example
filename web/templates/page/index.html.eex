@@ -1,0 +1,4 @@
+<script src="js/main.js" charset="utf-8"></script>
+<script>
+    var elm = Elm.Main.fullscreen();
+</script>

@@ -1,0 +1,22 @@
+/*@import '../../../node_modules/bootstrap/scss/bootstrap';*/
+
+body {
+    /*background-color: rgb(210, 246, 188);*/
+    font-family: sans-serif;
+}
+
+h1 {
+    /*color: rgb(13, 69, 79);*/
+}
+
+.drop-zone-container {
+    padding: 15px;
+    height: 150px;
+    /*background-color: #ccc;*/
+    border: 1px solid #ccc;
+}
+.drop-zone {
+    height: 100%;
+    border: 2px solid #ccc;
+
+}
