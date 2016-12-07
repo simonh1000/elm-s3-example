@@ -3,8 +3,6 @@ defmodule S3.Signing do
 
     use Timex
 
-    # @bucket "mpower-uploads"
-    # @region "us-west-1"
     @bucket Application.get_env(:s3, :aws_s3_bucket)
     @public_key Application.get_env(:s3, :aws_s3_public_key)
     @private_key Application.get_env(:s3, :aws_s3_secret_key)

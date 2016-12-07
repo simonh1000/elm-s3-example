@@ -11,3 +11,7 @@ signatureDecoder constructor =
         (field "date" string)
         (field "policy" string)
         (field "signature" string)
+
+
+etagDecoder =
+    field "ETag" string
